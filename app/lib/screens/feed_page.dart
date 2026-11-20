@@ -42,7 +42,9 @@ class _FeedPageState extends State<FeedPage> {
   }
 
   void recargarPosts() {
-    setState(() => futurePosts = _cargar());
+    setState(() {
+      futurePosts = _cargar();
+    });
   }
 
   Future<void> _refrescar() async {
@@ -97,6 +99,7 @@ class _FeedPageState extends State<FeedPage> {
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
+        heroTag: null,
         onPressed: _nueva,
         icon: const Icon(Icons.add),
         label: const Text('Nueva reseña'),

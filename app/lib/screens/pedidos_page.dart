@@ -17,7 +17,11 @@ class PedidosPage extends StatefulWidget {
 class _PedidosPageState extends State<PedidosPage> {
   late Future<List<PedidoModel>> _futuro = TiendaService().misPedidos();
 
-  void _recargar() => setState(() => _futuro = TiendaService().misPedidos());
+  void _recargar() {
+    setState(() {
+      _futuro = TiendaService().misPedidos();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

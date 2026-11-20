@@ -29,7 +29,11 @@ class _AdminUsersPageState extends State<AdminUsersPage> {
     _futuro = _servicio.obtenerUsuarios();
   }
 
-  void _recargar() => setState(() => _futuro = _servicio.obtenerUsuarios());
+  void _recargar() {
+    setState(() {
+      _futuro = _servicio.obtenerUsuarios();
+    });
+  }
 
   Future<void> _accion(UserModel u, String accion) async {
     try {

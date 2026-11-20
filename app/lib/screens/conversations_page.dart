@@ -79,6 +79,7 @@ class _ConversationsPageState extends State<ConversationsPage> {
         title: const Text('Mensajes'),
       ),
       floatingActionButton: FloatingActionButton(
+        heroTag: null,
         tooltip: 'Nuevo mensaje',
         onPressed: _nuevoChat,
         child: const Icon(Icons.edit_square),
