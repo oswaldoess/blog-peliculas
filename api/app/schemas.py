@@ -202,11 +202,7 @@ class ConversacionRespuesta(BaseModel):
     no_leidos: int
 
 
-# ----------------------------------------------------------------------
-# Archivos
-# ----------------------------------------------------------------------
-class ImagenRespuesta(BaseModel):
-    url: str
+
 
 
 class MensajeSimple(BaseModel):

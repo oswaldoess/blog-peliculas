@@ -24,8 +24,7 @@ class ApiConfig {
     return base.replace(queryParameters: query);
   }
 
-  /// Las imágenes subidas se guardan como ruta relativa (/static/...);
-  /// aquí se convierten en URL completa.
+  /// Si la URL de la imagen viene incompleta, le agrega la dirección de la API.
   static String? resolverImagen(String? url) {
     if (url == null || url.trim().isEmpty) return null;
     if (url.startsWith('http://') || url.startsWith('https://')) return url;
