@@ -41,7 +41,7 @@ blog-peliculas/
 ├── database/   script de la base de datos (blog_peliculas.sql)
 ├── api/        API en FastAPI
 ├── app/        aplicación Flutter
-└── docs/       diagramas, reporte y guion del video
+└── docs/       diagramas y reporte (Word y PDF)
 ```
 
 ## Cómo correrlo
